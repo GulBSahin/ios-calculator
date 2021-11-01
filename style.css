@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+
+body{
+
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    margin:25px;
+}
+
+.calculator{
+    background: black;
+    width: 563px;
+    height: 1218px;
+    border-radius: 50px;
+    padding:20px;
+    color:white;
+    position: relative;
+}
+.top-container{
+    padding: 0 20px;
+    display:flex;
+    justify-content: space-between;
+    height:250px;
+}
+
+#DigitalCLOCK{
+    font-size:1.8em;
+    
+}
+img {
+    height:1.6em;
+}
+
+.primary-display{
+    font-size: 130px;
+    font-weight: 300;
+    margin-bottom:20px;
+    height:158px;
+    margin-bottom:20px;
+    margin-right:20px;
+    text-align:right;
+}
+
+.secondary-display{
+    font-size: 60px;
+    font-weight: 100;
+    margin-bottom:20px;
+    height:58px;
+    margin-bottom:20px;
+    margin-right:20px;
+    text-align:right;
+}
+
+.button{
+    background-color:#333;
+    border-radius: 50%;
+    font-size:45px;
+    height:110px;
+    width: 110px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    transition: filter .1s;
+}
+
+.button.function{
+ color: black;
+ background-color:#a5a5a5;   
+}
+
+.button.operator{
+    background-color: #f1a33c;
+    color: black;
+
+}
+
+.buttons-container {
+display:grid;
+/* grid-template-columns: 4; */
+grid-template-rows: repeat(5,1fr) ;
+grid-template-columns: repeat(4,1fr) ;
+grid-gap: 20px;
+}
+
+.button.zero {
+    width: 250px;
+    border-radius: 55px;
+    justify-content:flex-start;padding-left:45px;
+    grid-column:1/3;
+}
+
+.button:active, .buton:focus{
+    filter: brightness(140%)
+}
+
+.bottom {
+    width:200px;
+    height: 5px;
+    background: white;
+    border-radius:4px;
+    position:absolute;
+    bottom:10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
